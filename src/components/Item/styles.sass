@@ -1,0 +1,27 @@
+@import '../../styles/variables.sass'
+
+.item
+  margin-bottom: 4%
+  height: 200px
+  flex: 0 0 48%
+  align-items: stretch
+  &:nth-child(2n)
+    padding-left: 4%
+    padding-right: 4%
+
+.content
+  width : 16%
+  height: 100%
+  cursor: pointer
+  text-align: center
+  margin-bottom: 40px
+  margin-left: 2%
+  margin-right: 2%
+  & img 
+    width: 100%
+    max-height: 250px
+    overflow: hidden
+
+.masonry
+    column-count: 4;
+    column-gap: 1em;

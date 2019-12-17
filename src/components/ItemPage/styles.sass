@@ -1,0 +1,100 @@
+@import '../../styles/variables.sass'
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.backLink
+  font-size: .9rem
+  color: $grey
+  cursor: pointer
+  transition: color .2s
+  font-weight: 500
+  span.small
+    svg
+      transform: rotateZ(90deg)
+      transition: color .2s
+      fill: $grey
+      font-weight: 800
+  &:hover, &:active
+    color: $black
+    span svg
+      fill: $black
+
+.itemImgSmallWrapper
+  margin-bottom: 4%
+  max-height: 150px
+  width: 30%
+  align-items: stretch
+  background-color: black
+  &:nth-child(3n+2)
+    margin-left: 4%
+    margin-right: 4%
+  & img 
+    width: 100%
+    overflow:hidden
+    cursor: pointer
+    transition: all .2s ease-in-out;
+  & img:hover
+    transform: scale(1.1);
+
+.itemPageWrapper
+  padding: 1rem 0 2rem 0
+  width: 100%
+  display: inline-flex
+  flex-direction: column
+  .itemImgWrapper
+    width: 30%
+    min-height: 100px
+    background-size: contain
+    background-repeat: no-repeat
+    text-align: center
+    padding-right: 20px
+    border-width: 0px 2px 0px 0px
+    border-color: black
+    border-style: solid
+    & img 
+      width: 100%
+      margin-bottom: 10px
+    & span 
+      line-height: 30px
+      font-family: 'robotobold'
+      color: #353535
+      font-size: 22px
+  .itemInfoWrapper
+    margin-top: 2rem
+    flex: 1
+    display: flex
+    flex-wrap: wrap
+  .itemInfoWrapper span
+    font-family: 'robotobold'
+    font-size: 20px
+    text-decoration: underline
+
+  .itemName
+    margin: 1rem 0 .5rem 0
+  .seller
+    margin-top: 1.5rem
+    font-size: 1rem
+    letter-spacing: 1px
+    color: $grey
+    span
+      font-weight: 800
+      color: $black
+  .itemCost
+    color: lighten($black, 20%)
+    font-size: 1.5rem
+    margin: 1rem 0
+    font-weight: 500
+
+  button
+    font-size: .8rem
+    font-weight: 600
+    text-transform: uppercase
+    padding: .5rem 1rem
+    cursor: pointer
+    transition: opacity .3s
+    &:hover
+      opacity: .8
+  .reqTradeBtn
+    margin: 3rem 0 0 0
+    background: $black
+    color: #fff
