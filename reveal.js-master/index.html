@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Fashism</h2>
+					<p>Budi | Arvind | Kevin | Claris | Siddhartha</p>
+				</section>
+				<section>
+					<h2>Gucci Gang</h2>
+					<p>1. Fashion Trend = Social Trend</p>
+					<p>2. Social Media = Popularity</p>
+					<blockquote>
+						Source: linkfluence; adweek; digitalstrategyconsulting; highsnobiety; researchgate
+					</blockquote>
+				</section>
+				<section>
+					<h2>Fashter R-CNN</h2>
+					<p>
+						Youtube-scraping to track brand ripple effect in consumer fashion. 
+					</p>
+				</section>
+				<section>
+					<h2>Justification</h2>
+					<p>1. Metrics: 50 hottest fashion items</p>
+					<p>2. Error minimization: filtering false data</p>
+					<p>3. Insight: segmentation of top 50</p>
+				</section>
+				<section>
+					<h2>Objectives: Primary business value</h2>
+					<p>1. quantitative trend analysis</p>
+					<p>2. customer segment positioning analysis</p>
+					<p>3. product placement-promotion analysis</p>
+				</section>
+				<section>
+					<h2>Secondary business value</h2>
+					<p>1. Personalized recommendation engine</p>
+					<p>2. customer tracking (style extrapolation)</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
