@@ -34,7 +34,7 @@
     "dotenv": "^4.0.0",
     "express-session": "^1.15.1",
     "interactive": "0.1.9",
-    "lodash": "4.17.4",
+    "lodash": "4.17.21",
     "lodash.debounce": "4.0.8",
     "lodash.throttle": "4.1.1",
     "mongoose": "^4.8.2",
